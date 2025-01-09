@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Logo from "../../../public/assets/logo.svg";
 import NavSection from "./NavSection";
+import ButtonPrimary from "./ButtonPrimary";
 
 const Footer = () => {
   const pageItems = [
@@ -73,7 +74,7 @@ const Footer = () => {
                 placeholder="Your Email Address"
                 className="w-full px-3 py-2 border border-neutral-300"
               />
-              <button>Subscribe</button>
+              <ButtonPrimary label="Subscribe" />
             </div>
           </div>
         </div>
