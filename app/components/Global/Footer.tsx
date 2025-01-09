@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
 
             <div className="space-y-4 w-full">
-              <h4 className="font-semibold text-xl text-neutral-900">
+              <h4 className="font-poppins font-semibold text-xl text-neutral-900">
                 Subscribe our Newsletter
               </h4>
               <input

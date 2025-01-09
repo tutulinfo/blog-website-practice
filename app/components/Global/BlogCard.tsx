@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface CardInfo {
   imageSrc: any;
@@ -7,6 +8,7 @@ interface CardInfo {
   description: string;
   authorInfo: string;
   publishDate: string;
+  href: string;
 }
 
 interface Props {
@@ -15,7 +17,11 @@ interface Props {
 }
 const BlogCard = ({ cardInfo, key }: Props) => {
   return (
-    <a key={key} className="max-w-sm min-w-64 bg-neutral-50 shadow">
+    <Link
+      key={key}
+      href="/singlepost"
+      className="max-w-sm min-w-64 bg-neutral-50 shadow"
+    >
       {/* Image */}
       <div className="relative w-full h-48 overflow-hidden ">
         <Image
@@ -39,7 +45,7 @@ const BlogCard = ({ cardInfo, key }: Props) => {
           <p className="">{cardInfo?.publishDate}</p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
